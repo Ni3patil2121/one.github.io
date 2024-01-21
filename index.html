@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- BMI Calculator Page -->
+<div id="bmiPage" class="page">
+    <h1>BMI Calculator</h1>
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" placeholder="Enter weight" required>
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" placeholder="Enter height" required>
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <p id="bmiResult"></p>
+</div>
+
+<!-- Contact Page -->
+<div id="contactPage" class="page">
+    <h1>Contact Us</h1>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="Type your message here" required></textarea>
+    <button onclick="sendMessage()">Send Message</button>
+</div>
+
+<!-- JavaScript and AOS Library -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
